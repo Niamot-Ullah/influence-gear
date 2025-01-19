@@ -25,12 +25,16 @@ h3 , h4{
     font-weight:500;
     padding: .8rem 0;
 }
+p{
+    opacity: .7;
+}
 
-/* nav section starts here  */
+
 header,main{
     width: 85vw;
     margin: 0 auto;
 }
+/* nav section starts here  */
 nav{
     display: flex;
     justify-content: space-between;
@@ -115,6 +119,59 @@ nav ul{
 .fa-star{
     font-size:small;
 }
+.btn{
+    text-align: right;
+}
+.btn button{
+    border: none;
+    color: var(---button-color);
+    font-weight: bold;
+    margin-top: 2rem;
+    background-color: #fff;
+    font-size: 1rem;
+}
+/* feature section starts here  */
+.feature-container{
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    display: flex;
+    column-gap: 6rem;
+    align-items: center;
+}
+.feature-description h1{
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+}
+.join-btn{
+    margin-top: 1rem;
+    border: none;
+    background-color: var(---button-color);
+    color: var(---primary-color);
+    padding:10px 24px;
+}
+
+/* footer section starts here  */
+.footer-container{
+    height: 250px;
+    background-color: var(---footer-background);
+    color: var(---primary-color);
+    text-align: center;
+    align-content: center;
+    display: grid;
+    row-gap: .5rem;
+}
+.footer-icon i{
+    padding: 1rem;
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -133,6 +190,9 @@ nav ul{
         display:inline;
         margin-top: 1rem;
     }
+    nav h2{
+        margin-right: 1rem;
+    }
     /* banner section starts here  */
     .banner-container{
         flex-direction: column-reverse;
@@ -147,6 +207,8 @@ nav ul{
     }
     .banner-description h1{
         font-size: 2.2rem;
+        margin-top: 2rem;
+
     }
     .banner-img{
         /* width: 90vw;
@@ -178,4 +240,17 @@ nav ul{
         grid-template-columns: repeat(1,1fr);
         gap: 3rem;
     }
+    .popular-container > h2{
+        margin-bottom: 2rem;
+    }
+    /* feature section  */
+    .feature-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
+
+
+
 }
