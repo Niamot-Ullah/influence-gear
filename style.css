@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root{
+    ---button-color:#E02C6D;
+    ---footer-background:black;
+    ---footer-font: "Manrope", serif;
+    ---primary-color:#ffffff
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", serif;
+    
+}
+/* primary section stars here  */
+h2{
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+/* nav section starts here  */
+header{
+    width: 85vw;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.fa-bars {
+    display:none;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    column-gap: 1.3rem;
+}
+/* banner section starts here  */
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+.banner-description{
+    width: 50%;
+    align-content: center;
+}
+.banner-description h1{
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+.banner-description button{
+    padding: .7rem 1.5rem;
+    border-radius: 41px;
+    border: none;
+    background-color: var(---button-color);
+    color: var(---primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.banner-img{
+    width: 50%;
+    text-align: right;
+}
+#main-camera{
+    position: absolute;
+    right: 9.4rem;
+    padding-top: 2rem;
+}
+/* add section starts here  */
+.add-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem auto;
+    padding: 2rem;
+    border-top: 2px solid #f1f1f1;
+    border-bottom: 2px solid #f1f1f1;
+}
+/* .hide{
+    display: none;
+} */
+
+
+
+
+
+
+
+
+
+
+/* responsiveness for mobile  */
+@media screen and (max-width : 576px) {
+    nav ul{
+        display: none;
+    }
+    .fa-bars {
+        display:inline;
+        margin-top: 1rem;
+    }
+    /* banner section starts here  */
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-img{
+        /* width: 90vw;
+        text-align: center; */
+    }
+    #main-bg{
+        width: 90vw;
+        text-align: center;
+        margin-left: -2rem;
+    }
+    #main-camera{
+        width: 80vw;
+        top: 10rem;
+        left: 1rem;
+    }
+}
